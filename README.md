@@ -63,29 +63,29 @@ The Expense Tracker API is a Spring Boot application designed to help users mana
 ## API Endpoints
 ### Authentication
 - **Register User**:
-  - `POST /api/auth/register`
+  - `POST expense-tracker/api/auth/register`
   - Body: `{"name": "John Doe", "email": "john@example.com", "password": "pass123"}`
 - **Login**:
-  - `POST /api/auth/login`
+  - `POST expense-tracker/api/auth/login`
   - Body: `{"email": "john@example.com", "password": "pass123"}`
 
 ### Expenses : Pass Basic Auth To Access End Points
 - **Create Expense**:
-  - `POST /api/expenses`
+  - `POST expense-tracker/api/expense`
   - Body: `{"amount": 10.0, "category": "Food", "description": "Lunch", "date": "2023-10-01"}`
 - **Get All Expenses**:
-  - `GET /api/expenses`
+  - `GET expense-tracker/api/expense`
 - **Get Expense by ID**:
-  - `GET /api/expenses/<id>`
+  - `GET expense-tracker/api/expense/<id>`
 - **Update Expense**:
-  - `PUT /api/expenses/<id>`
+  - `PUT expense-tracker/api/expense/<id>`
   - Body: `{"amount": 15.0, "category": "Travel", "description": "Taxi"}`
 - **Delete Expense**:
-  - `DELETE /api/expenses/<id>`
+  - `DELETE expense-tracker/api/expense/<id>`
 - **Get Total Expenses**:
-  - `GET /api/expenses/total?startDate=2023-10-01&endDate=2023-10-31`
+  - `GET expense-tracker/api/expense/total?startDate=2023-10-01&endDate=2023-10-31`
 - **Get Category Totals**:
-  - `GET /api/expenses/categories`
+  - `GET expense-tracker/api/expense/categories`
 
 ### Reports : Pass Basic Auth To Access End Points
 - **Monthly Report**:
